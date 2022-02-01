@@ -1,0 +1,8 @@
+
+@use './mixins.scss';
+
+.wrapper
+{
+    @include mixins.flexContent(column, center, center);
+    margin: 50px 100px 100px;
+}
