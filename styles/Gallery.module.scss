@@ -1,0 +1,21 @@
+
+@use './mixins.scss';
+
+.wrapper
+{
+    @include mixins.flexContent();
+    margin: 100px auto;
+
+    span:hover
+    {
+        transform: scale(1.1);
+        transition: all 0.4s ease;
+    }
+
+    .img
+    {
+        border-radius: 8px !important;
+        box-shadow: 0 0 15px 300px #333;
+        cursor: pointer;
+    }
+}

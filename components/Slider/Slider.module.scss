@@ -1,0 +1,40 @@
+
+@use '../../styles/mixins.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.container
+{
+    @include mixins.flexContent();
+
+    button
+    {
+        width: 40px;
+        z-index: 1;
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 3vw;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        text-shadow: 4px 4px 30px #555, 
+            4px -4px 30px #555, 
+            -4px 4px 30px #555, 
+            -4px -4px 30px #555;
+    }
+
+    .slider
+    {
+        @include mixins.flexContent(row, flex-start, flex-start, 0);
+        width: 100%;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        *
+        {
+            width: 100%;
+            display: inline-block;
+            background-color: #ddd;
+        }
+    }
+}

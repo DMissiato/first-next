@@ -1,0 +1,46 @@
+
+@use '../styles/mixins.scss';
+
+.nav
+{
+    height: 60px;
+    border-bottom: 2px solid #999;
+
+    ul
+    {
+        @include mixins.flexContent();
+        list-style: none;
+        height: 100%;
+        margin: 0;
+
+        li
+        {
+            padding: 5px 20px;
+            border-radius: 1em;
+
+            &.activeBtn
+            {
+                background-color: #999;
+            }
+        }
+    }
+}
+
+.children
+{
+    min-height: calc(100vh - 180px);
+}
+
+.footer
+{
+    @include mixins.flexContent();
+    height: 120px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+
+    a
+    {
+        text-decoration: underline;
+    }
+}
