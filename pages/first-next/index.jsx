@@ -1,10 +1,10 @@
 
-import LayoutDefault from '../layout/index';
-import Slider from '../components/Slider';
+import LayoutDefault from '../../layout/index';
+import Slider from '../../components/Slider';
 import axios from 'axios';
-import { API_URL } from '../libs/variables';
-import Post from '../components/Post';
-import style from '../styles/Index.module.scss';
+import { API_URL } from '../../libs/variables';
+import Post from '../../components/Post';
+import style from '../../styles/Index.module.scss';
 
 const Home = ({ data }) => 
 {

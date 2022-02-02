@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from "react";
 import Image from 'next/image';
-import LayoutDefault from '../layout/index';
-import style from '../styles/Gallery.module.scss';
+import LayoutDefault from '../../layout/index';
+import style from '../../styles/Gallery.module.scss';
 
 const photos = [
     'https://picsum.photos/200/300',

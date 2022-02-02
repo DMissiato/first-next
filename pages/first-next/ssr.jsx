@@ -1,9 +1,9 @@
 
-import LayoutDefault from "../layout";
+import LayoutDefault from "../../layout";
 import axios from "axios";
-import { API_URL } from "../libs/variables";
-import Post from "../components/Post";
-import style from '../styles/Ssr.module.scss';
+import { API_URL } from "../../libs/variables";
+import Post from "../../components/Post";
+import style from '../../styles/Ssr.module.scss';
 
 const Ssr = ({ data }) =>
 {

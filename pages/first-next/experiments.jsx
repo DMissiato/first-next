@@ -1,6 +1,6 @@
 
 import Particles from 'react-tsparticles';
-import LayoutDefault from '../layout/index';
+import LayoutDefault from '../../layout/index';
 
 const Esperimenti = () => 
 {
