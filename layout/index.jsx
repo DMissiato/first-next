@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import style from './index.module.scss';
 
-const PATH = '/first-next';
 
 const LayoutDefault = ({ children }) => 
 {
@@ -13,23 +12,23 @@ const LayoutDefault = ({ children }) =>
         <>
             <div className={style.nav}>
                 <ul>
-                    <li className={`${router.pathname === `${PATH}/` && style.activeBtn}`}>
-                        <Link href={`${PATH}/`}>
+                    <li className={`${router.pathname === '/' && style.activeBtn}`}>
+                        <Link href={'/'}>
                             <a>Home</a>
                         </Link>
                     </li>
-                    <li className={`${router.pathname === `${PATH}/ssr` && style.activeBtn}`}>
-                        <Link href={`${PATH}/ssr`}>
+                    <li className={`${router.pathname === '/ssr' && style.activeBtn}`}>
+                        <Link href={'/ssr'}>
                             <a>SSR</a>
                         </Link>
                     </li>
-                    <li className={`${router.pathname === `${PATH}/gallery` && style.activeBtn}`}>
-                        <Link href={`${PATH}/gallery`}>
+                    <li className={`${router.pathname === '/gallery' && style.activeBtn}`}>
+                        <Link href={'/gallery'}>
                             <a>Gallery</a>
                         </Link>
                     </li>
-                    <li className={`${router.pathname === `${PATH}/experiments` && style.activeBtn}`}>
-                        <Link href={`${PATH}/experiments`}>
+                    <li className={`${router.pathname === '/experiments' && style.activeBtn}`}>
+                        <Link href={'/experiments'}>
                             <a>Esperimenti</a>
                         </Link>
                     </li>

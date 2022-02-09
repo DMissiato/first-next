@@ -1,8 +1,8 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    loader: 'imgix',
-    path: 'picsum.photos',
+    loader: 'default',
+    formats: ['image/avif', 'image/webp'],
     domains: ['picsum.photos']
   }
 }
